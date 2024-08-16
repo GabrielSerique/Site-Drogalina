@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;;
+}
+
+.produtos {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-section {
+    padding: 20px;
+    max-width: 1200vh;
+    margin: auto;
+}
+
+.container {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 30pt;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.produtos {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.price-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price-button span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.BotaoAdicionar {
+    padding: 10px 20px;
+    border: none;
+    background-color: #413980;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.BotaoAdicionar:hover {
+    background-color: #4f4879;
+}
+
+.BotaoRemover {
+    padding: 10px 20px;
+    border: none;
+    background-color: #413980;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.BotaoRemover:hover {
+    background-color: #4f4879;
+}
+
+.BotaoFinalizar {
+    padding: 10px 20px;
+    border: none;
+    background-color: #413980;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.BotaoFinalizar:hover {
+    background-color: #4f4879;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table thead {
+    background-color: #f1f1f1;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-table img {
+    width: 50px;
+    height: auto;
+}
+
+tfoot td {
+    text-align: right;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-table th, .cart-table td {
+        font-size: 14px;
+    }
+
+    .price-button {
+        flex-direction: column;
+    }
+
+    .price-button span {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-table img {
+        width: 30px;
+    }
+
+    tfoot td {
+        text-align: left;
+    }
+}

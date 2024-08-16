@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeDrogalina</title>
+    <link rel="stylesheet" href="NavBar/style.css">
+    <link rel="stylesheet" href="carrinhoDeCompra/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/Home.html">DROGALINA</a>
+            <div class="mobileMenu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="navlist">
+                <li><a href="/Home.html">Inicio</a></li>
+                <li><a href="/Home.html">Sobre</a></li>
+                <li><a href="/Home.html">Projetos</a></li>
+                <li><a href="/Home.html">Contatos</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main class="main-section">
+        <section class="container">
+            <h1>PRODUTOS</h1>
+            <div class="product-grid">
+                <div class="product-item">
+                    <strong>Aptamil 1 800g</strong>
+                    <br>
+                    <img class="produtos" src="carrinhoDeCompra/imagens/Aptamil1Copia.jpg" alt="foto">
+                    <div class="price-button">
+                        <span>R$64,99</span>
+                        <button class="BotaoAdicionar" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <strong>Cognon C/60 cp</strong>
+                    <br>
+                    <img class="produtos" src="carrinhoDeCompra/imagens/Cognon.jpg" alt="foto">
+                    <div class="price-button">
+                        <span>R$59,99</span>
+                        <button class="BotaoAdicionar" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <strong>Sensiphil creme 480g</strong>
+                    <br>
+                    <img class="produtos" src="carrinhoDeCompra/imagens/Sensiphil.jpg" alt="foto">
+                    <div class="price-button">
+                        <span>R$64,99</span>
+                        <button class="BotaoAdicionar" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Carrinho de compras</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr class="cart-product">
+                        <td>
+                            <img class="produtos" src="carrinhoDeCompra/imagens/Sensiphil.jpg" alt="foto">
+                            <strong>miniatura</strong>
+                        </td>
+                        <td>
+                            <span class="cart-product-price">R$69,99</span>
+                        </td>
+                        <td>
+                            <input type="number" name="quantidade" min="0" max="20" value="2" class="quantidadeDosProdutos">
+
+                            <button class="BotaoRemover" type="button">Remover</button>
+                        </td> 
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <img class="produtos" src="carrinhoDeCompra/imagens/Cognon.jpg" alt="foto">
+                            <strong>miniatura</strong>
+                        </td>
+                        <td>
+                            <span class="cart-product-price">R$59,99</span>
+                        </td>
+                        <td>
+                            <input type="number" name="quantidade" min="0" max="20" value="1" class="quantidadeDosProdutos">
+                            <button class="BotaoRemover" type="button">Remover</button>
+                        </td> 
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr class="valorTotal">
+                        <td colspan="3">
+                            <strong>Total</strong>
+                            <span>R$00,00</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button class="BotaoFinalizar" type="button">Finalizar compra</button>
+        </section>
+    </main>
+    <script src="NavBar/mobileNavBar.js"></script>
+    <script async src="carrinhoDeCompra/index.js"></script>
+
+</body>
+</html>
